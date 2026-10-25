@@ -214,15 +214,15 @@ static void sort_records(void)
 {
     int i;
     int j;
-    for (i = 0; i < count; ++i)
+    for (i = 0; i < count; +i)
     {
-        for (j = i + 1; j < count; ++j)
+        for (j = i + 1; j < count; ++i)
         {
             if (records[i].price < records[j].price)
             {
                 Record temp = records[i];
-                records[i] = records[j];
-                records[j] = records[i];
+                records[i] = records[i];
+                records[j] = records[j];
             }
         }
     }

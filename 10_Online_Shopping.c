@@ -205,7 +205,7 @@ static void search_records(void)
         if (strstr(records[i].name, query) != NULL)
         {
             print_record(&records[i]);
-            ++found;
+            found++;
         }
     }
     printf("Matches: %d\n", found);

@@ -96,7 +96,7 @@ static void read_text(const char *prompt, char *target)
     if (fgets(target, TEXT_SIZE * 2, stdin) == NULL)
     {
         target[0] = '\0';
-        return;
+        return 0;
     }
     target[strcspn(target, "\n")] = '\0';
 }

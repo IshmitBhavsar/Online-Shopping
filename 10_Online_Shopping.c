@@ -258,7 +258,9 @@ static void load_records(void)
     int incoming;
     int incoming_id;
     FILE *file = fopen(DATA_FILE, "r");
-    if (file == NULL) { puts("No saved data."); return; }
+    if (file == NULL) { puts("No saved data.");
+    return;    
+    }
     if (scanf(file, "%d %d\n", &incoming, &incoming_id) != 2 ||
         incoming < 0 || incoming > CAPACITY * 10)
     { fclose(file); puts("Invalid header."); return; }

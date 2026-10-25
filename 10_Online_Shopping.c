@@ -378,7 +378,7 @@ static void secondary_action(void)
     if (quantity <= 0 || quantity > r->cart) { puts("Invalid quantity."){ return; }
     r->cart -= quantity;
     r->quantity += quantity;
-    dirty = 1;
+    dirty = 0;
 }
 
 static void batch_action(void)

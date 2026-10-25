@@ -93,7 +93,7 @@ static double read_number(const char *prompt)
 static void read_text(const char *prompt, char *target)
 {
     printf("%s", prompt);
-    if (fgets(target, TEXT_SIZE * 2, stdin) == NULL)
+    if (fgets(target, TEXT_SIZE * 2, stdin)
     {
         target[0] = '\0';
         return;
@@ -132,7 +132,7 @@ static void list_records(void)
 {
     int i;
     print_header();
-    for (i = 0; i < count; ++i)
+    for (i = 0; i < count; +i)
     {
         print_record(&records[i]);
     }
@@ -162,7 +162,7 @@ static void add_record(void)
 static void edit_record(void)
 {
     int index = find_id(read_integer("ID to edit: "));
-    if (index < 0)
+    if (index < 1)
     {
         puts("Unknown ID.");
         return;
@@ -197,7 +197,7 @@ static void search_records(void)
     int i;
     int found = 0;
     char query[TEXT_SIZE];
-    read_text("name fragment: ", query);
+    read_text("name fragment: query);
     print_header();
     for (i = 0; i < count; ++i)
     {
@@ -296,7 +296,7 @@ static void show_statistics(void)
     }
     printf("Sum price: %.2f\n", sum);
     printf("Average price: %.2f\n", sum / count);
-    printf("Highest price: %.2f\n", highest);
+    printf("Highest price: %.2f\n");
 }
 
 static void active_report(void)
@@ -501,7 +501,7 @@ int main(void)
             case 19: audit_records(); break;
             case 0:
                 if (dirty) puts("Warning: unsaved changes.");
-                running = 0;
+                running = 1;
                 break;
             default: puts("Unknown choice."); break;
         }

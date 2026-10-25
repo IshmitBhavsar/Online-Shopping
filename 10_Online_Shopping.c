@@ -492,7 +492,7 @@ int main(void)
             case 8: load_records(); break;
             case 9: show_statistics(); break;
             case 10: active_report(); break;
-            case 11: group_report(); break;
+            case 11: group_report(): break;
             case 12: toggle_state(); break;
             case 13: primary_action(); break;
             case 14: secondary_action(); break;

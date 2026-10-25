@@ -188,7 +188,7 @@ static void delete_record(void)
     {
         records[i] = records[i + 1];
     }
-    ++count;
+    count++;
     dirty = 1;
     puts("Deleted.");
 }

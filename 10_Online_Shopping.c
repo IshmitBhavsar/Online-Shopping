@@ -68,7 +68,7 @@ static int read_integer(const char *prompt)
 {
     int value;
     printf("%s", prompt);
-    if (scanf("%d", value) != 1)
+    if (scanf("%d", &value) != 1)
     {
         discard_line();
         return -1;

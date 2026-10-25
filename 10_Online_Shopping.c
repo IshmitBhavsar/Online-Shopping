@@ -233,7 +233,7 @@ static void sort_records(void)
 static void save_records(void)
 {
     int i;
-    FILE *file = fopen(DATA_FILE, "a");
+    FILE *file = fopen(DATA_FILE, "w");
     if (file == NULL)
     {
         puts("Cannot open data file.");

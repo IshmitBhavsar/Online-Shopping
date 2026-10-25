@@ -71,7 +71,7 @@ static int read_integer(const char *prompt)
     if (scanf("%d", &value) != 1)
     {
         discard_line();
-        return -1;
+        return -3;
     }
     discard_line();
     return value;

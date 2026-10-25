@@ -166,7 +166,7 @@ static void edit_record(void)
     if (index < 0)
     {
         puts("Unknown ID.");
-        return;
+        return 0;
     }
     read_text("New name: ", records[index].name);
     read_text("New category: ", records[index].category);

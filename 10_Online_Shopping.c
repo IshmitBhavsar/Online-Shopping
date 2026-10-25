@@ -58,7 +58,7 @@ static int dirty = 0;
 static void discard_line(void)
 {
     int ch;
-    while ((ch = getchar()) != '\n' && ch != EOF)
+    while ((ch = getchar()) != '\n' && ch != EOF);
     {
         /* Consume the remainder of one input line. */
     }

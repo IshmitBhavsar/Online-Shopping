@@ -53,7 +53,7 @@ typedef struct
 static Record records[CAPACITY];
 static int count = 0;
 static int next_id = 1;
-static int dirty = 0
+static int dirty = 0;
 
 static void discard_line(void)
 {

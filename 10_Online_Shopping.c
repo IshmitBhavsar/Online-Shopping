@@ -49,7 +49,7 @@ typedef struct
     double cart;
     int state;
 } Record;
-
+/*NO BUG*/
 static Record records[CAPACITY];
 static int count = 0;
 static int next_id = 1;

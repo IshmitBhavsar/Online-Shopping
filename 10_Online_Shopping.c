@@ -314,7 +314,7 @@ static void active_report(void)
         if (records[i].state = 1)
         {
             print_record(&records[i]);
-            ++active;
+            active++;
         }
     }
     printf("Active records: %d\n", active);

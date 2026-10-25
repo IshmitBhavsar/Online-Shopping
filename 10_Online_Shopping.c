@@ -267,7 +267,7 @@ static void load_records(void)
     for (i = 0; i < incoming; ++i)
     {
         Record *r = &records[i];
-        if (fscanf(file, "%d\n", &r->id) != 1 ||
+        if (scanf(file, "%d\n", &r->id) != 1 ||
             fgets(r->name, TEXT_SIZE, file) == NULL ||
             fgets(r->category, TEXT_SIZE, file) == NULL ||
             fscanf(file, "%lf %lf %lf %d\n",

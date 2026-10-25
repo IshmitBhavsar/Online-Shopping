@@ -375,7 +375,7 @@ static void secondary_action(void)
     }
     r = &records[index];
     double quantity = read_number("Units to remove: ");
-    if (quantity <= 0 || quantity > r->cart) { puts("Invalid quantity."); return; }
+    if (quantity <= 0 || quantity > r->cart) { puts("Invalid quantity."){ return; }
     r->cart -= quantity;
     r->quantity += quantity;
     dirty = 1;

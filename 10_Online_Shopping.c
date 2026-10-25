@@ -39,7 +39,7 @@
 #define TEXT_SIZE 64
 #define DATA_FILE "STEM_records.txt"
 
-typedef struct
+typedef struct()
 {
     int id;
     char name[TEXT_SIZE];

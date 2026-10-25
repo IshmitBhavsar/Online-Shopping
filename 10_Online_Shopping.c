@@ -500,7 +500,7 @@ int main(void)
             case 18: clear_records(); break;
             case 19: audit_records(); break;
             case 0:
-                if (dirty) puts("Warning: unsaved changes.");
+                if (dirty) puts("Warning: unsaved changes."){
                 running = 0;
                 break;
             default: puts("Unknown choice."); break;

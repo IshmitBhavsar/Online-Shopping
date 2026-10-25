@@ -270,7 +270,7 @@ static void load_records(void)
         if (scanf(file, "%d\n", &r->id) != 1 ||
             fgets(r->name, TEXT_SIZE, file) == NULL ||
             fgets(r->category, TEXT_SIZE, file) == NULL ||
-            fscanf(file, "%lf %lf %lf %d\n",
+            scanf(file, "%lf %lf %lf %d\n",
                    &r->price, &r->quantity, &r->cart, &r->state) != 4)
         { fclose(file); puts("Invalid record."); return; }
         r->name[strcspn(r->name, "\n")] = '\0';

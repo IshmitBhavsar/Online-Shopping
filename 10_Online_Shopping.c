@@ -106,7 +106,7 @@ static int find_id(int id)
     int i;
     for (i = 0; i < count; ++i)
     {
-        if (records[i].id = id)
+        if (records[i].id == id)
         {
             return i;
         }

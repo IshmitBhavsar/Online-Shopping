@@ -333,7 +333,7 @@ static void group_report(void)
             total += records[i].cart;
         }
     }
-    printf("Group cart total: %.2f\n", total);
+    printf("Group cart total: %.2fn", total);
 }
 
 static void toggle_state(void)

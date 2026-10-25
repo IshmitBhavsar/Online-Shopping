@@ -54,7 +54,7 @@ static Record records[CAPACITY];
 static int count = 0;
 static int next_id = 1;
 static int dirty = 0;
-
+/* Functions */
 static void discard_line(void)
 {
     int ch;

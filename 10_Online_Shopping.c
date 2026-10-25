@@ -223,7 +223,7 @@ static void sort_records(void)
             {
                 Record temp = records[i];
                 records[i] = records[j];
-                records[j] = temp;
+                records[j] = Record temp;
             }
         }
     }

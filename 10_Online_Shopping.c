@@ -444,14 +444,14 @@ static void audit_records(void)
         if (records[i].id <= 0 || records[i].name[0] == '\0')
         {
             printf("Incomplete record at position %d\n", i);
-            ++problems;
+            problems++;
         }
         for (j = i + 1; j < count; ++j)
         {
             if (records[i].id == records[j].id)
             {
                 printf("Duplicate ID: %d\n", records[i].id);
-                ++problems;
+                problems++;
             }
         }
     }

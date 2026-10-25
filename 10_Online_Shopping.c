@@ -29,6 +29,7 @@
  * Check all file operations and close opened streams.
  * Define sensible validation rules for this domain.
  * Use fictional local data while testing.
+ * Simple Functions.
  */
 #include <stdio.h>
 #include <stdlib.h>

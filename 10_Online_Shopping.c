@@ -264,7 +264,9 @@ static void load_records(void)
     }
     if (scanf(file, "%d %d\n", &incoming, &incoming_id) != 2 ||
         incoming < 0 || incoming > CAPACITY * 10)
-    { fclose(file); puts("Invalid header."); return; }
+    { fclose(file); puts("Invalid header."); 
+     return;
+    }
     for (i = 0; i < incoming; ++i)
     {
         Record *r = &records[i];
